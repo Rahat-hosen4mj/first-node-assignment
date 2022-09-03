@@ -23,6 +23,7 @@ app.use('/api/v1/users', usersRoute)
 
 
 app.get('/', (req, res) => {
+  res.send('node server running')
   // res.sendFile(__dirname + '/public/index.html')
   res.render("home.ejs",{
     id: 5,
